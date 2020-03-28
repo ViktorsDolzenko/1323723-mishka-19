@@ -41,119 +41,115 @@
         детали.
       </p>
     </header>
-    <div class="order">
-      <form action="https://echo.htmlacademy.ru" method="post" class="order__form">
-        <fieldset class="order__fieldset">
-          <legend class="order__legend">Тип</legend>
-          <div class="order__radio-wrapper">
-            <ul class="order__list radio-list">
-              <li class="radio-list__item">
-                <input class="visually-hidden" type="radio" id="r1" name="type" value="accessories" checked>
-                <label for="r1">
-                  Аксессуар для интерьера
-                </label>
-              </li>
-              <li class="radio-list__item">
-                <input class="visually-hidden" type="radio" id="r2" name="type" value="toy">
-                <label for="r2">
-                  Детская игрушка
-                </label>
-              </li>
-            </ul>
-          </div>
-        </fieldset>
-        <fieldset class="order__fieldset">
-          <legend class="order__legend">Цвет</legend>
-          <div class="order__checkbox-wrapper">
-            <ul class="order__list checkbox-list">
-              <li class="checkbox-list__item">
-                <input class="visually-hidden" type="checkbox" id="c1" name="color" value="white" checked>
-                <label for="c1">
-                  Белый
-                </label>
-              </li>
-              <li class="checkbox-list__item">
-                <input class="visually-hidden" type="checkbox" id="c2" name="color" value="grey" checked>
-                <label for="c2">
-                  Серый
-                </label>
-              </li>
-              <li class="checkbox-list__item">
-                <input class="visually-hidden" type="checkbox" id="c3" name="color" value="tiffany">
-                <label for="c3">
-                  «Тиффани»
-                </label>
-              </li>
-              <li class="checkbox-list__item">
-                <input class="visually-hidden" type="checkbox" id="c4" name="color" value="black">
-                <label for="c4">
-                  Черный
-                </label>
-              </li>
-              <li class="checkbox-list__item">
-                <input class="visually-hidden" type="checkbox" id="c5" name="color" value="pink">
-                <label for="c5">
-                  Розовый
-                </label>
-              </li>
-              <li class="checkbox-list__item">
-                <input class="visually-hidden" type="checkbox" id="c6" name="color" value="orange">
-                <label for="c6">
-                  Оранжевый
-                </label>
-              </li>
-            </ul>
-          </div>
-        </fieldset>
-        <fieldset class="order__fieldset">
-          <legend class="order__legend">Фио</legend>
-          <div class="order__information">
-            <ul class="order__list information-list">
-              <li class="information-list__item">
-                <label for="info-1">Имя</label>
-                <input type="text" placeholder="Введите ваше имя*" id="info-1" name="username" required>
-              </li>
-              <li class="information-list__item">
-                <label for="info-2">Фамилия</label>
-                <input type="text" placeholder="Укажите фамилию*" id="info-2" name="surename" required>
-              </li>
-              <li class="information-list__item">
-                <label for="info-3">Отчество</label>
-                <input type="text" placeholder="Отчество, если желаете" id="info-3" name="fathername">
-              </li>
-            </ul>
-          </div>
-        </fieldset>
-        <fieldset class="order__fieldset">
-          <div class="order__contacts">
-            <ul class="order__list user-contacts">
-              <li class="user-contacts__item">
-                <label for="phone">
-                  <span>Тел</span>
-                </label>
-                <input type="tel" placeholder="+7 XXX XXX XX XX" id="phone" name="phone" required>
-              </li>
-              <li class="user-contacts__item">
-                <label for="email">
-                  <span>E-mail</span>
-                </label>
-                <input type="email" placeholder="Ваш Email*" id="email" name="email" required>
-              </li>
-            </ul>
-          </div>
-        </fieldset>
-        <fieldset class="order__fieldset">
-          <legend class="order__legend">Доп</legend>
-          <div class="order__feedback">
-            <textarea class="order__text-input" name="message" placeholder="Опишите все ваши пожелания к заказу"></textarea>
-          </div>
-        </fieldset>
-        <div class="order__submit-wrapper">
-          <p class="order__required">*Поля обязательны для заполнения</p>
-          <button class="button order__button" type="submit">Отправить заказ</button>
+    <form action="https://echo.htmlacademy.ru" method="post" class="order">
+      <fieldset class="order__fieldset">
+        <legend class="order__legend">Тип</legend>
+        <div class="order__radio-wrapper">
+          <ul class="order__list radio-list">
+            <li class="radio-list__item">
+              <input class="visually-hidden" type="radio" id="r1" name="type" value="accessories" checked>
+              <label for="r1">
+                Аксессуар для интерьера
+              </label>
+            </li>
+            <li class="radio-list__item">
+              <input class="visually-hidden" type="radio" id="r2" name="type" value="toy">
+              <label for="r2">
+                Детская игрушка
+              </label>
+            </li>
+          </ul>
         </div>
-      </form>
-    </div>
+      </fieldset>
+      <fieldset class="order__fieldset">
+        <legend class="order__legend">Цвет</legend>
+        <div class="order__checkbox-wrapper">
+          <ul class="order__list checkbox-list">
+            <li class="checkbox-list__item">
+              <input class="visually-hidden" type="checkbox" id="c1" name="color" value="white" checked>
+              <label for="c1">
+                Белый
+              </label>
+            </li>
+            <li class="checkbox-list__item">
+              <input class="visually-hidden" type="checkbox" id="c2" name="color" value="grey" checked>
+              <label for="c2">
+                Серый
+              </label>
+            </li>
+            <li class="checkbox-list__item">
+              <input class="visually-hidden" type="checkbox" id="c3" name="color" value="tiffany">
+              <label for="c3">
+                «Тиффани»
+              </label>
+            </li>
+            <li class="checkbox-list__item">
+              <input class="visually-hidden" type="checkbox" id="c4" name="color" value="black">
+              <label for="c4">
+                Черный
+              </label>
+            </li>
+            <li class="checkbox-list__item">
+              <input class="visually-hidden" type="checkbox" id="c5" name="color" value="pink">
+              <label for="c5">
+                Розовый
+              </label>
+            </li>
+            <li class="checkbox-list__item">
+              <input class="visually-hidden" type="checkbox" id="c6" name="color" value="orange">
+              <label for="c6">
+                Оранжевый
+              </label>
+            </li>
+          </ul>
+        </div>
+      </fieldset>
+      <fieldset class="order__fieldset">
+        <legend class="order__legend">Фио</legend>
+        <div class="order__information">
+          <ul class="order__list information-list">
+            <li class="information-list__item">
+              <label for="info-1">Имя</label>
+              <input type="text" placeholder="Введите ваше имя*" id="info-1" name="username" required>
+            </li>
+            <li class="information-list__item">
+              <label for="info-2">Фамилия</label>
+              <input type="text" placeholder="Укажите фамилию*" id="info-2" name="surename" required>
+            </li>
+            <li class="information-list__item">
+              <label for="info-3">Отчество</label>
+              <input type="text" placeholder="Отчество, если желаете" id="info-3" name="fathername">
+            </li>
+          </ul>
+        </div>
+      </fieldset>
+      <fieldset class="order__fieldset">
+        <div class="order__contacts">
+          <ul class="order__list user-contacts">
+            <li class="user-contacts__item">
+              <label for="phone">
+              Тел
+              </label>
+              <input type="tel" placeholder="+7 XXX XXX XX XX" id="phone" name="phone" required>
+            </li>
+            <li class="user-contacts__item">
+              <label for="email">
+               E-mail
+              </label>
+              <input type="email" placeholder="Ваш Email*" id="email" name="email" required>
+            </li>
+          </ul>
+        </div>
+      </fieldset>
+      <fieldset class="order__fieldset">
+        <legend class="order__legend">Доп</legend>
+        <textarea class="order__text-input" name="message" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+      </fieldset>
+      <div class="order__submit-wrapper">
+        <p class="order__required">*Поля обязательны для заполнения</p>
+        <button class="button order__button" type="submit">Отправить заказ</button>
+      </div>
+    </form>
   </main>
   <footer class="page-footer">
     <div class="socials">
@@ -169,8 +165,10 @@
         </li>
       </ul>
     </div>
-    <a href="https://htmlacademy.ru/intensive/adaptive">Разработано</a>
-    <img src="https://via.placeholder.com/150x150" alt="Лого Академии">
+    <a href="https://htmlacademy.ru/intensive/adaptive">
+      Разработано
+      <img src="https://via.placeholder.com/150x150" alt="Лого Академии">
+    </a>
   </footer>
 </body>
 
