@@ -7,10 +7,6 @@
   padding: 0;
 }
 
-.promo__list-item {
-  list-style: none;
-}
-
 .promo__list-link {
   color: white;
   text-decoration: none;
@@ -18,10 +14,13 @@
 }
 
 .promo__list-item {
+  list-style: none;
   min-height: 103px;
+
   &:first-child {
     background-color: #63d1bb;
   }
+
   &:last-child {
     background-color: #56c3b2;
   }
