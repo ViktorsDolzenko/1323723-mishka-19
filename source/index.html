@@ -3,13 +3,15 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Мишка</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
   <header class="page-header">
     <a class="page-header__logo">
-      <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" alt="Логотип сайта Мишка">
+      <img class="page-header__logo-image" src="img/logo-mobile.svg" alt="Логотип сайта Мишка" width="86" height="35">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">Открыть меню</button>
@@ -32,13 +34,14 @@
   <main class="page-main">
     <h1 class="visually-hidden">Мишка — интернет-магазин игрушек ручной работы</h1>
     <section class="promo">
+      <img src="img/hero-mobile@1x.jpg" alt="Интернет-магазин Мишка" width="322" height="373">
       <h2 class="promo__title">Милые штуки ручной работы для дома</h2>
       <ul class="promo__list">
         <li class="promo__list-item">
-          <a href="#">Предметы интерьера</a>
+          <a class="promo__list-link" href="#">Предметы интерьера</a>
         </li>
         <li class="promo__list-item">
-          <a href="#">Детские игрушки</a>
+          <a class="promo__list-link" href="#">Детские игрушки</a>
         </li>
       </ul>
     </section>
@@ -64,7 +67,7 @@
           </tr>
         </tbody>
       </table>
-      <img src="https://via.placeholder.com/150x150" alt="Пряжа">
+      <img src="img/triple-set-mobile@1x.jpg" alt="Пряжа" width="260" height="315">
       <p class="offer__price">Цена: 990 руб.</p>
       <a class="button offer__button" href="#">Заказать</a>
     </section>
@@ -90,20 +93,20 @@
         <button class="reviews__back" type="button" aria-label="back"></button>
         <button class="reviews__next" type="button" aria-label="next"></button>
       </div>
-      <a class="button reviews__button">Написать</a>
+      <a class="button reviews__button" href="#">Написать</a>
     </section>
     <section class="contacts">
       <h2 class="contacts__title">Контакты</h2>
       <p class="contacts__info">
         <span>e-mail:</span>
-        <a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+        <a class="contacts__link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
       </p>
       <address class="contacts__info">
         <span>адрес:</span>
         <span>г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</span>
       </address>
       <div class="contacts__map map">
-
+<img src="img/map-mobile@1x.jpg" alt="Карта" width="322" height="457">
       </div>
       <a class="button contacts__button" href="#">Напишите нам</a>
     </section>
@@ -112,19 +115,19 @@
     <div class="socials">
       <ul class="socials__list">
         <li class="socials__list-item">
-          <a class="socials__link socials__link--instagram" href="#" aria-label="Instagram"></a>
+          <a class="socials__link socials__link--instagram" href="#" aria-label="Instagram">Instagram</a>
         </li>
         <li class="socials__list-item">
-          <a class="socials__link socials__link--facebook" href="#" aria-label="Facebook"></a>
+          <a class="socials__link socials__link--facebook" href="#" aria-label="Facebook">Facebook</a>
         </li>
         <li class="socials__list-item">
-          <a class="socials__link socials__twitter socials__link--twitter" href="#" aria-label="Twitter"></a>
+          <a class="socials__link socials__twitter socials__link--twitter" href="#" aria-label="Twitter">Twitter</a>
         </li>
       </ul>
     </div>
     <a href="https://htmlacademy.ru/intensive/adaptive">
       Разработано
-      <img src="https://via.placeholder.com/150x150" alt="Лого Академии">
+      <img src="img/logo-htmlacademy.svg" alt="Лого Академии" width="27" height="34">
     </a>
   </footer>
 </body>
