@@ -1,6 +1,31 @@
 .about-us__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   list-style: none;
   font-size: 17px;
   font-weight: bold;
   line-height: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.about-us__list-item {
+  padding-bottom: 95px;
+  width: 80%;
+
+  &:first-child {
+    padding-top: 95px;
+    width: 60%;
+  }
+
+  &:last-child {
+    width: 65%;
+    padding-bottom: 65px;
+  }
+}
+
+.about-us__title {
+  margin: 0;
+  margin-top: 80px;
 }

@@ -1,0 +1,19 @@
+.created-by {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.created-by__link {
+  color: black;
+  font-size: 19px;
+  font-weight: bold;
+  padding-right: 50px;
+}
+
+.created-by__img {
+  position: absolute;
+  right: 27%;
+  fill: #63d1bb;
+}

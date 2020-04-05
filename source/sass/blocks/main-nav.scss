@@ -1,3 +1,8 @@
 .main-nav {
-  background-color: white;
+  display: block;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  display: none;
 }

@@ -1,8 +1,18 @@
 .site-list {
   list-style: none;
+  padding: 0;
+  margin-bottom: 0;
 }
 
 .site-link {
+  display: block;
   text-decoration: none;
   color: black;
+  font-size: 17px;
+  font-weight: bold;
+  padding: 27px 30px 27px 110px;
+}
+
+.site-list__item {
+  box-shadow: inset 0 -1px 0 0 #e5e5e5;
 }

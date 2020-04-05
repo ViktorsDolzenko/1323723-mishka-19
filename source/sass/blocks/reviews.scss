@@ -2,4 +2,40 @@
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;
+  margin-bottom: 0;
+}
+
+.reviews__user-instagram {
+  margin-top: 0;
+  font-size: 17px;
+}
+
+.reviews__text {
+  width: 84%;
+  margin: 0;
+  margin-right: auto;
+}
+
+.reviews__title {
+  margin-bottom: 40px;
+}
+
+.reviews__carousel {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.reviews__arrow {
+  padding: 0;
+  width: 50%;
+  height: 52px;
+  border: 1px solid #ececec;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.reviews__button {
+  display: flex;
+  justify-content: center;
 }
