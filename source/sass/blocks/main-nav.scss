@@ -1,8 +1,24 @@
 .main-nav {
   display: block;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+  }
 }
 
 .main-nav__toggle {
   position: absolute;
   display: none;
+}
+
+.main-nav__text {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    order: 2;
+    margin-left: auto;
+  }
 }

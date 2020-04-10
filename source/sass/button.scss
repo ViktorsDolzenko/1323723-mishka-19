@@ -1,8 +1,12 @@
 .button {
   color: #444444;
   border: 2px solid black;
-  padding: 10px 0;
+  padding: 5px 0;
   font-size: 17px;
   font-weight: bold;
   text-transform: uppercase;
+}
+
+.button--reviews {
+  padding: 5px 30px;
 }

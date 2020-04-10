@@ -9,11 +9,28 @@
   color: black;
   font-size: 19px;
   font-weight: bold;
-  padding-right: 50px;
+  padding-right: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
 .created-by__img {
-  position: absolute;
-  right: 27%;
   fill: #63d1bb;
+  position: absolute;
+  right: 22%;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    right: 12%;
+  }
+}
+
+.created-by__logo {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }

@@ -1,7 +1,27 @@
+.offer__header {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.offer__wrapper {
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 16px;
+    padding-right: 420px;
+  }
+}
+
 .offer__title {
   font-size: 25px;
   margin-bottom: 10px;
   padding-left: 3px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+  }
 }
 
 .offer__product {
@@ -12,6 +32,13 @@
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: auto;
+    margin-top: 30px;
+    width: 100px;
+    text-align: center;
+  }
 }
 
 .offer__week {
@@ -36,9 +63,15 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+  }
 }
 
 .offer__button {
-  display: flex;
-  justify-content: center;
+  display: block;
+  text-align: center;
 }
