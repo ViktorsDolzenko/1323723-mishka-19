@@ -20,7 +20,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 15px;
-    padding: 15px 15px 40px 15px;
+    padding: 15px 15px 20px 15px;
   }
 }
 
@@ -39,9 +39,30 @@
     flex-grow: 1;
     width: 100%;
   }
+
+  @media (min-width: $desktop-width) {
+    height: auto;
+    justify-content: flex-end;
+    width: auto;
+    flex-grow: 1;
+  }
 }
 
 .site-list--nav {
-  margin-right: auto;
-  order: 1;
+  @media (min-width: $tablet-width) {
+    order: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 0;
+  }
+}
+
+.site-list--offer {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    width: 50%;
+  }
 }

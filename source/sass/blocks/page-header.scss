@@ -12,12 +12,19 @@
   }
 }
 
+.page-header__logo {
+  flex-shrink: 0;
+}
+
 .page-header__logo-image {
   display: block;
   margin: auto;
-  flex-shrink: 0;
 
   @media (min-width: $tablet-width) {
     height: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 1;
   }
 }

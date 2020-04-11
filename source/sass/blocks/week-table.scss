@@ -2,6 +2,11 @@
   line-height: 20px;
   width: 100%;
   border-spacing: 0;
+
+  @media (min-width: $desktop-width) {
+    width: 70%;
+    padding-left: 150px;
+  }
 }
 
 .week-table__cell {

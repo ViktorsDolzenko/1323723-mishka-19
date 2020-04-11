@@ -11,7 +11,7 @@
     width: 768px;
   }
 
-  @media (min-width: 1150px) {
+  @media (min-width: $desktop-width) {
     width: 1150px;
     padding-left: 50px;
     padding-right: 50px;

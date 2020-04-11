@@ -32,7 +32,13 @@
     max-width: 670px;
     margin: 0 auto;
   }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1050px;
+    margin: 0 auto;
+  }
 }
+
 
 .promo__list-link {
   display: block;

@@ -30,6 +30,10 @@
       padding-right: 80px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 150px;
+  }
 }
 
 .about-us__title {
@@ -38,6 +42,10 @@
 
   @media (min-width: $tablet-width) {
     font-size: 43px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 150px;
   }
 }
 
