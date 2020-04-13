@@ -1,9 +1,10 @@
-.form-header__title {
-  font-size: 27px;
+.form-header {
+  background-color: #ebebeb;
+  padding: 75px 0;
+  margin-bottom: 30px;
 }
 
-.form-header__text {
-  font-size: 13px;
-  line-height: 24px;
-  color: #444444;
+.form-header__title {
+  font-size: 27px;
+  text-align: center;
 }

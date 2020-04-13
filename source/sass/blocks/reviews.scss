@@ -17,11 +17,19 @@
   @media (min-width: $tablet-width) {
     margin-top: 75px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 150px;
+  }
 }
 
 .reviews__user-instagram {
   margin-top: 0;
   font-size: 17px;
+
+  @media (min-width: $desktop-width) {
+    padding-left: 150px;
+  }
 }
 
 .reviews__text {
@@ -32,6 +40,11 @@
   @media (min-width: $tablet-width) {
     width: 90%;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 150px;
+    width: 79%;
+  }
 }
 
 .reviews__title {
@@ -40,6 +53,11 @@
   @media (min-width: $tablet-width) {
     font-size: 43px;
     margin-bottom: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 150px;
+    font-size: 53px;
   }
 }
 

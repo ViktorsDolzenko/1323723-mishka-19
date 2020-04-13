@@ -10,3 +10,28 @@
 .button--reviews {
   padding: 5px 30px;
 }
+
+.button--video-order {
+  padding: 5px 12px;
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    width: 80%;
+    text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 30px;
+  }
+}
+
+.button--order-form {
+  padding: 10px 0;
+  margin-left: 10px;
+  width: 90%;
+  background-color: white;
+
+  @media (min-width: $tablet-width) {
+    width: 35%;
+  }
+}

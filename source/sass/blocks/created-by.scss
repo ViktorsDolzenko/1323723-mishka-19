@@ -12,7 +12,7 @@
   padding-right: 40px;
 
   @media (min-width: $tablet-width) {
-    padding: 0;
+    padding-left: 10px;
   }
 }
 
@@ -22,8 +22,11 @@
   right: 22%;
 
   @media (min-width: $tablet-width) {
-    position: absolute;
-    right: 12%;
+    right: 5%;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 15%;
   }
 }
 

@@ -37,7 +37,6 @@
     height: 100%;
     justify-content: flex-end;
     flex-grow: 1;
-    width: 100%;
   }
 
   @media (min-width: $desktop-width) {
@@ -64,5 +63,18 @@
   @media (min-width: $desktop-width) {
     display: flex;
     width: 50%;
+  }
+}
+
+.site-link--nav {
+  @media (min-width: $tablet-width) {
+    padding-right: 0;
+  }
+}
+
+.site-link--main,
+.site-link--offer {
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
   }
 }

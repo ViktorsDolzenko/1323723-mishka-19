@@ -1,6 +1,15 @@
+.catalog-item {
+  margin: 0 auto 30px;
+
+  @media (min-width: $desktop-width) {
+    margin: 60px 0;
+  }
+}
+
 .catalog-item__title {
   line-height: 24px;
   font-size: 17px;
+  margin-top: 0;
 }
 
 .catalog-item__description {
@@ -10,4 +19,17 @@
 
 .catalog-item__price {
   font-weight: bold;
+}
+
+.catalog-item__description-wrapper {
+  width: 260px;
+  padding: 26px 27px 11px;
+  border: 1px solid #ececec;
+}
+
+.catalog-item__price-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #ececec;
 }
