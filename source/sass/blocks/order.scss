@@ -1,7 +1,52 @@
 .order__fieldset {
+  position: relative;
   border: 0;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 100px;
+    padding-top: 50px;
+  }
 }
 
 .order__list {
   list-style: none;
+}
+
+.order__legend {
+  font-size: 17px;
+  font-weight: bold;
+  color: #63d1bb;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    left: 0;
+    top: 66px;
+  }
+}
+
+.order__text-input {
+  min-height: 140px;
+  padding: 14px 15px;
+  width: 100%;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #000000;
+  font-size: 17px;
+  line-height: 18px;
+}
+
+.order__required {
+  font-size: 14px;
+
+  @media (min-width: $tablet-width) {
+    order: 1;
+  }
+}
+
+.order__submit-wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }

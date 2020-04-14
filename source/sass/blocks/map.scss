@@ -1,0 +1,17 @@
+.map {
+  margin-top: 40px;
+  margin-bottom: 40px;
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-70%);
+    left: 57%;
+  }
+}
+
+.map__img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

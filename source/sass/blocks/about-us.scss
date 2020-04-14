@@ -1,6 +1,59 @@
 .about-us__list {
+  display: flex;
+  flex-wrap: wrap;
   list-style: none;
   font-size: 17px;
   font-weight: bold;
   line-height: 20px;
+  margin: 0;
+  padding-left: 0;
+  margin-bottom: 70px;
+
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
+    margin-bottom: 175px;
+  }
 }
+
+.about-us__list-item {
+  position: relative;
+  padding-top: 80px;
+
+  @media (min-width: $tablet-width) {
+    width: 45%;
+
+    &:first-child {
+      width: 30%;
+    }
+
+    &:last-child {
+      padding-right: 80px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 150px;
+  }
+}
+
+.about-us__title {
+  margin: 0;
+  margin-top: 50px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 150px;
+    font-size: 53px;
+  }
+}
+
+/* .about-us__eko::before {
+  content: "";
+  background-image: url("../img/icon-feature-flower.svg");
+  width: 33px;
+  height: 58px;
+  position: absolute;
+} */

@@ -1,0 +1,39 @@
+.created-by {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.created-by__link {
+  color: black;
+  font-size: 19px;
+  font-weight: bold;
+  padding-right: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 10px;
+  }
+}
+
+.created-by__img {
+  fill: #63d1bb;
+  position: absolute;
+  right: 22%;
+
+  @media (min-width: $tablet-width) {
+    right: 5%;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 15%;
+  }
+}
+
+.created-by__logo {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}

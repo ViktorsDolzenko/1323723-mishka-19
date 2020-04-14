@@ -1,3 +1,20 @@
+.page-main__header {
+  background-color: #ebebeb;
+  padding: 75px 0;
+  margin-bottom: 30px;
+}
+
 .page-main__title {
   font-size: 27px;
+  text-align: center;
+}
+
+.page-main--catalog {
+  margin-bottom: 30px;
+}
+
+.page-main__form-text {
+  font-size: 13px;
+  line-height: 24px;
+  color: #444444;
 }

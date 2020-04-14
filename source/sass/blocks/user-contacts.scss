@@ -1,0 +1,38 @@
+.user-contacts {
+  padding: 0;
+}
+
+.user-contacts__input {
+  padding: 12px 0;
+  width: 100%;
+  min-height: 52px;
+  border-width: 0 0 2px;
+  border-style: solid;
+  border-color: #000000;
+  font-size: 17px;
+  line-height: 18px;
+}
+
+.user-contacts__label--phone {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    left: 0;
+    top: 35%;
+    font-size: 17px;
+    font-weight: bold;
+    color: #63d1bb;
+    text-transform: uppercase;
+  }
+}
+
+.user-contacts__label--email {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    left: 0;
+    top: 65%;
+    font-size: 17px;
+    font-weight: bold;
+    color: #63d1bb;
+    text-transform: uppercase;
+  }
+}

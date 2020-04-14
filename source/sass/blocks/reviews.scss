@@ -1,5 +1,95 @@
+.reviews {
+  @media (min-width: $tablet-width) {
+    position: relative;
+    background-image: url("../img/review@1x.jpg");
+    background-size: 350px 457px;
+    background-position: left top;
+    background-repeat: no-repeat;
+  }
+}
+
 .reviews__user {
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;
+  margin-bottom: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 75px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 150px;
+  }
+}
+
+.reviews__user-instagram {
+  margin-top: 0;
+  font-size: 17px;
+
+  @media (min-width: $desktop-width) {
+    padding-left: 150px;
+  }
+}
+
+.reviews__text {
+  width: 100%;
+  margin: 0;
+  margin-right: auto;
+
+  @media (min-width: $tablet-width) {
+    width: 90%;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 150px;
+    width: 79%;
+  }
+}
+
+.reviews__title {
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    margin-bottom: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 150px;
+    font-size: 53px;
+  }
+}
+
+.reviews__carousel {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.reviews__arrow {
+  padding: 0;
+  width: 80%;
+  height: 52px;
+  border: 1px solid #ececec;
+  background-color: transparent;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    width: 21%;
+    position: absolute;
+    top: 78%;
+    right: 6.5%;
+  }
+}
+
+.reviews__button {
+  display: block;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 0%;
+    right: 6.5%;
+  }
 }
