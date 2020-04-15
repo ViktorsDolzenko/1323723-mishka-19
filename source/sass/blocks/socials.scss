@@ -28,31 +28,25 @@
   align-items: center;
   width: 40px;
   height: 40px;
+  content: "";
+  display: block;
+  background-repeat: no-repeat;
 }
 
 .socials__link--instagram::before {
-  content: "";
   background-image: url("../img/icon-insta.svg");
-  background-repeat: no-repeat;
   width: 22px;
   height: 21px;
-  display: block;
 }
 
 .socials__link--facebook::before {
-  content: "";
   background-image: url("../img/icon-fb.svg");
-  background-repeat: no-repeat;
   width: 15px;
   height: 29px;
-  display: block;
 }
 
 .socials__link--twitter::before {
-  content: "";
   background-image: url("../img/icon-twitter.svg");
-  background-repeat: no-repeat;
   width: 24px;
   height: 20px;
-  display: block;
 }
