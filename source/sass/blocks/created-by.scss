@@ -1,8 +1,16 @@
 .created-by {
   display: flex;
   justify-content: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 28px;
+  padding-right: 17px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 7px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+  }
 }
 
 .created-by__link {
@@ -19,14 +27,14 @@
 .created-by__img {
   fill: #63d1bb;
   position: absolute;
-  right: 22%;
+  right: 26%;
 
   @media (min-width: $tablet-width) {
-    right: 5%;
+    right: 7%;
   }
 
   @media (min-width: $desktop-width) {
-    right: 15%;
+    right: 11.5%;
   }
 }
 

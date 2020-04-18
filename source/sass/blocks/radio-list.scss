@@ -3,11 +3,27 @@
 }
 
 .radio-list__item {
-  padding-bottom: 20px;
-  padding-left: 25px;
+  padding-bottom: 15px;
+  padding-left: 21px;
+  line-height: 18px;
+  padding-top: 10px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 54px;
+    padding-top: 3px;
+    padding-left: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 36px;
+  }
 }
 
 .radio-list__label {
   font-size: 17px;
   font-weight: bold;
+
+  @media (min-width: $tablet-width) {
+    font-size: 19px;
+  }
 }

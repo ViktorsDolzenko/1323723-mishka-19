@@ -1,5 +1,6 @@
 .main-nav {
   display: block;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -11,7 +12,75 @@
 
 .main-nav__toggle {
   position: absolute;
+  top: 3%;
+  right: 0;
+  z-index: 2;
   display: none;
+  width: 24px;
+  height: 20px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  background-color: white;
+}
+
+@media (max-width: $mobile-only) {
+  .main-nav--closed .site-list__item {
+    display: none;
+  }
+
+  .main-nav__toggle {
+    display: block;
+  }
+}
+
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 2px;
+  background-color: black;
+  box-shadow: 0 6px 0 0 #000000, 0 12px 0 0 #000000;
+}
+
+.main-nav--opened .main-nav__toggle {
+  top: 3%;
+  right: 0;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    background-color: black;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: rgba($color: #0000007c, $alpha: 0.5);
+  }
+}
+
+.main-nav--nojs {
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .site-list__item {
+    display: block;
+  }
 }
 
 .main-nav__text {
@@ -22,5 +91,9 @@
     order: 2;
     margin-left: auto;
     margin-top: 5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 14px;
   }
 }

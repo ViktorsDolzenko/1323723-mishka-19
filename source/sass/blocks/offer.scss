@@ -5,7 +5,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 135px;
+    margin-top: 82px;
   }
 }
 
@@ -14,23 +14,24 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 16px;
-    padding-right: 420px;
+    padding-right: 378px;
   }
 }
 
 .offer__title {
   font-size: 25px;
-  margin-bottom: 10px;
-  padding-left: 3px;
+  margin-top: 14px;
+  margin-bottom: 4px;
 
   @media (min-width: $tablet-width) {
     font-size: 43px;
+    margin-top: 54px;
   }
 
   @media (min-width: $desktop-width) {
     order: 1;
     margin-right: auto;
-    padding-left: 50px;
+    padding-left: 38px;
     font-size: 53px;
   }
 }
@@ -42,17 +43,18 @@
   font-weight: bold;
   text-transform: uppercase;
   margin-top: 0;
-  margin-bottom: 35px;
+  margin-bottom: 23px;
 
   @media (min-width: $tablet-width) {
-    margin-left: auto;
-    margin-top: 30px;
+    margin-left: 19%;
+    margin-top: 54px;
     width: 100px;
     text-align: center;
+    line-height: 17px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 0;
+    margin-left: 32px;
   }
 }
 
@@ -60,9 +62,16 @@
   color: #444444;
   line-height: 24px;
 
+  @media (min-width: $tablet-width) {
+    line-height: 30px;
+    font-size: 17px;
+    margin-bottom: 31px;
+  }
+
   @media (min-width: $desktop-width) {
-    padding-left: 150px;
-    width: 64%;
+    padding-left: 176px;
+    width: 70%;
+    margin-bottom: 50px;
   }
 }
 
@@ -73,9 +82,19 @@
   line-height: 24px;
   font-weight: bold;
   color: #444444;
+  margin-top: 27px;
+  margin-bottom: 26px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 59px;
+    margin-bottom: 35px;
+    line-height: 24px;
+    font-size: 20px;
+  }
 
   @media (min-width: $desktop-width) {
     padding-right: 30px;
+    margin-top: 109px;
   }
 }
 
@@ -99,12 +118,7 @@
   }
 }
 
-.offer__button {
-  display: block;
-  text-align: center;
-
-  @media (min-width: $desktop-width) {
-    width: 290px;
-    margin-left: 150px;
-  }
+@media (min-width: $desktop-width) {
+  width: 290px;
+  margin-left: 150px;
 }

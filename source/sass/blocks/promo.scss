@@ -6,6 +6,13 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 0;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/hero-tablet@1x.jpg");
+    background-size: 1150px 746px;
+    background-position: center bottom;
+    min-height: 746px;
+  }
 }
 
 .promo__title {
@@ -13,18 +20,23 @@
   font-weight: bold;
   text-align: center;
   padding-top: 50px;
-  margin-bottom: 150px;
+  margin-bottom: 136px;
 
   @media (min-width: $tablet-width) {
-    width: 400px;
+    width: 500px;
     margin-left: auto;
     margin-right: auto;
+    font-size: 43px;
+    line-height: 50px;
+    padding-top: 115px;
+    margin-bottom: auto;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 53px;
     width: 700px;
     line-height: 57px;
+    padding-top: 108px;
   }
 }
 
@@ -33,15 +45,19 @@
   flex-wrap: wrap;
   width: 100%;
   padding: 0;
+  padding-left: 30px;
+  padding-right: 30px;
 
   @media (min-width: $tablet-width) {
     max-width: 670px;
     margin: 0 auto;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
     max-width: 1050px;
     margin: 0 auto;
+    padding: 0;
   }
 }
 
@@ -50,11 +66,19 @@
   color: white;
   text-decoration: none;
   font-size: 19px;
+  line-height: 24px;
   font-weight: bold;
   width: 200px;
-  padding-top: 20px;
-  padding-left: 30px;
+  padding-top: 26px;
+  padding-left: 27px;
   padding-right: 30px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    padding-top: 28px;
+    padding-left: 36px;
+  }
 }
 
 .promo__list-item {
@@ -72,5 +96,6 @@
 
   @media (min-width: $tablet-width) {
     width: 50%;
+    min-height: 121px;
   }
 }

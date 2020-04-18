@@ -4,20 +4,31 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+    width: 583px;
+    padding-left: 58px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 990px;
   }
 }
 
 .checkbox-list__item {
-  padding-bottom: 30px;
-  padding-left: 25px;
+  padding-bottom: 31px;
+  padding-left: 21px;
+
+  &:last-child {
+    padding-bottom: 5px;
+  }
 
   @media (min-width: $tablet-width) {
     justify-content: space-between;
     width: 50%;
+    padding-bottom: 45px;
   }
 
   @media (min-width: $desktop-width) {
     width: 28%;
+    padding-left: 19px;
   }
 }

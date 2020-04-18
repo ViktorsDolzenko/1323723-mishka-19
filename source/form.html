@@ -10,17 +10,19 @@
 
 <body>
   <header class="page-header container">
-    <nav class="main-nav">
-      <a class="page-header__logo">
+    <nav class="main-nav main-nav--closed main-nav--nojs">
+      <a class="page-header__logo" href="index.html">
         <img class="page-header__logo-image" src="img/logo-mobile.svg" alt="Логотип сайта Мишка" width="86" height="35">
       </a>
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
       <ul class="main-nav__list site-list site-list--nav">
         <li class="site-list__item">
           <a class="site-link site-link--main" href="catalog.html">Каталог товаров</a>
         </li>
         <li class="site-list__item">
-          <a class="site-link site-link--main" href="form.html">Вязание на заказ</a>
+          <a class="site-link site-link--main site-link__form" href="form.html">Вязание на заказ</a>
         </li>
       </ul>
       <ul class="main-nav__list site-list site-list--user-nav">
@@ -36,7 +38,7 @@
           <a class="site-link site-link--offer">Новые поступления</a>
         </li>
         <li class="site-list__item">
-          <a class="site-link site-link--offer">Распродажа</a>
+          <a class="site-link site-link--offer site-link__sale">Распродажа</a>
         </li>
       </ul>
       <p class="main-nav__text">Бесплатная доставка по России</p>
@@ -52,7 +54,7 @@
     <p class="page-main__form-text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
       <form action="https://echo.htmlacademy.ru" method="post" class="order">
         <fieldset class="order__fieldset">
-          <legend class="order__legend">Тип</legend>
+          <legend class="order__legend order__legend--type">Тип</legend>
           <div class="order__radio-wrapper">
             <ul class="order__list radio-list">
               <li class="radio-list__item">
@@ -70,7 +72,7 @@
             </ul>
           </div>
         </fieldset>
-        <fieldset class="order__fieldset">
+        <fieldset class="order__fieldset order__fieldset--color">
           <legend class="order__legend">Цвет</legend>
           <div class="order__checkbox-wrapper">
             <ul class="order__list checkbox-list">
@@ -113,13 +115,13 @@
             </ul>
           </div>
         </fieldset>
-        <fieldset class="order__fieldset">
+        <fieldset class="order__fieldset order__fieldset--information">
           <legend class="order__legend">Фио</legend>
           <div class="order__information">
             <ul class="order__list information-list">
               <li class="information-list__item">
                 <label class="information-list__label" for="info-1">Имя:</label>
-                <input class="information-list__input" type="text" placeholder="Введите ваше имя*" id="info-1" name="username" required>
+                <input class="information-list__input information-list__input--name" type="text" placeholder="Введите ваше имя*" id="info-1" name="username" required>
               </li>
               <li class="information-list__item">
                 <label class="information-list__label" for="info-2">Фамилия:</label>
@@ -150,8 +152,8 @@
             </ul>
           </div>
         </fieldset>
-        <fieldset class="order__fieldset">
-          <legend class="order__legend">Доп</legend>
+        <fieldset class="order__fieldset order__fieldset--optional">
+          <legend class="order__legend order__legend--optional">Доп</legend>
           <textarea class="order__text-input" name="message" placeholder="Опишите все ваши пожелания к заказу"></textarea>
         </fieldset>
         <div class="order__submit-wrapper">
@@ -160,7 +162,7 @@
         </div>
       </form>
   </main>
-  <footer class="page-footer">
+  <footer class="page-footer page-footer--form">
     <div class="container page-footer__container">
       <a>
         <img class="created-by__logo" src="img/logo-footer.svg" width="102" height="34" alt="Логотип Мишка">
@@ -189,7 +191,7 @@
       </div>
     </div>
   </footer>
-
+  <script src="js/script.js"></script>
 </body>
 
 </html>

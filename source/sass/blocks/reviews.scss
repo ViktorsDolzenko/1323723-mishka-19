@@ -13,13 +13,19 @@
   font-size: 17px;
   line-height: 24px;
   margin-bottom: 0;
+  margin-top: 31px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 75px;
+    margin-top: 55px;
+    line-height: 30px;
+    font-size: 18px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 150px;
+    padding-left: 176px;
+    margin-top: 41px;
+    font-size: 17px;
+    line-height: 24px;
   }
 }
 
@@ -28,7 +34,8 @@
   font-size: 17px;
 
   @media (min-width: $desktop-width) {
-    padding-left: 150px;
+    padding-left: 174px;
+    margin-top: 2px;
   }
 }
 
@@ -38,33 +45,36 @@
   margin-right: auto;
 
   @media (min-width: $tablet-width) {
-    width: 90%;
+    line-height: 30px;
+    font-size: 17px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 150px;
-    width: 79%;
+    padding-left: 176px;
+    width: 92%;
   }
 }
 
 .reviews__title {
   margin-bottom: 20px;
+  font-size: 25px;
 
   @media (min-width: $tablet-width) {
     font-size: 43px;
-    margin-bottom: 70px;
+    margin-bottom: 58px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 150px;
+    padding-left: 172px;
     font-size: 53px;
+    margin-top: 0;
   }
 }
 
 .reviews__carousel {
   display: flex;
   justify-content: center;
-  margin-bottom: 40px;
+  margin-bottom: 51px;
 }
 
 .reviews__arrow {
@@ -79,17 +89,6 @@
     width: 21%;
     position: absolute;
     top: 78%;
-    right: 6.5%;
-  }
-}
-
-.reviews__button {
-  display: block;
-  text-align: center;
-
-  @media (min-width: $tablet-width) {
-    position: absolute;
-    top: 0%;
     right: 6.5%;
   }
 }

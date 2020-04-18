@@ -2,6 +2,11 @@
   margin-top: 40px;
   margin-bottom: 40px;
 
+  @media (min-width: $tablet-width) {
+    margin-top: 53px;
+    margin-bottom: 55px;
+  }
+
   @media (min-width: $desktop-width) {
     position: absolute;
     top: 50%;

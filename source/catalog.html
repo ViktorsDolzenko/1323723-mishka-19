@@ -10,17 +10,19 @@
 
 <body>
   <header class="page-header container">
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--closed main-nav--nojs">
       <a class="page-header__logo" href="index.html">
         <img class="page-header__logo-image" src="img/logo-mobile.svg" alt="Логотип сайта Мишка" width="86" height="35">
       </a>
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
       <ul class="main-nav__list site-list site-list--nav">
         <li class="site-list__item">
           <a class="site-link site-link--main" href="catalog.html">Каталог товаров</a>
         </li>
         <li class="site-list__item">
-          <a class="site-link site-link--main" href="form.html">Вязание на заказ</a>
+          <a class="site-link site-link--main site-link--form" href="form.html">Вязание на заказ</a>
         </li>
       </ul>
       <ul class="main-nav__list site-list site-list--user-nav">
@@ -86,11 +88,11 @@
         <h3 class="video__title">Процесс производства</h3>
         <div class="video__player">
           <img src="img/video-mobile@1x.jpg" alt="Видео" width="260" height="150">
-          <button type="button">Play</button>
+          <button type="button" class="video-button"></button>
         </div>
         <div class="video__description">
-        <p class="video__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-        <a class="button button--video-order" href="form.html">Сделать заказ</a>
+          <p class="video__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+          <a class="button button--video-order" href="form.html">Сделать заказ</a>
         </div>
       </section>
     </div>
@@ -124,6 +126,7 @@
       </div>
     </div>
   </footer>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

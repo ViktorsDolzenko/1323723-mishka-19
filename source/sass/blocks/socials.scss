@@ -7,15 +7,15 @@
   margin: 0;
   padding-bottom: 20px;
   box-shadow: inset 0 -1px 0 0 #dbdbdb;
-  width: 50%;
+  width: 55%;
   margin-left: auto;
   margin-right: auto;
 
   @media (min-width: $tablet-width) {
-    width: 20%;
+    width: 21%;
     padding: 0;
     margin: 0;
-    margin-left: 70px;
+    margin-left: 89px;
     box-shadow: none;
   }
 
@@ -33,19 +33,19 @@
   background-repeat: no-repeat;
 }
 
-.socials__link--instagram::before {
+.socials__link--instagram {
   background-image: url("../img/icon-insta.svg");
   width: 22px;
   height: 21px;
 }
 
-.socials__link--facebook::before {
+.socials__link--facebook {
   background-image: url("../img/icon-fb.svg");
   width: 15px;
   height: 29px;
 }
 
-.socials__link--twitter::before {
+.socials__link--twitter {
   background-image: url("../img/icon-twitter.svg");
   width: 24px;
   height: 20px;
