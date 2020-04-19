@@ -1,12 +1,25 @@
 .page-main__header {
   background-color: #ebebeb;
-  padding: 75px 0;
-  margin-bottom: 30px;
+  padding: 57px 0;
+  margin-bottom: 26px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 58px;
+  }
 }
 
 .page-main__title {
   font-size: 27px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+  }
 }
 
 .page-main--catalog {
@@ -17,4 +30,15 @@
   font-size: 13px;
   line-height: 24px;
   color: #444444;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    line-height: 30px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 175px;
+    width: 83%;
+  }
 }

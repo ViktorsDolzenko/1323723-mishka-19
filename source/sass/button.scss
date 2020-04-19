@@ -5,19 +5,49 @@
   font-size: 17px;
   font-weight: bold;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .button--reviews {
-  padding: 5px 30px;
+  padding: 9px 30px;
+  display: block;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 8px 38px;
+    text-align: center;
+    position: absolute;
+    top: -2%;
+    right: 6.5%;
+    display: block;
+  }
+
+  @media (min-width: $tablet-width) {
+    top: -2.5%;
+    right: 4.3%;
+    padding: 9px 38px;
+  }
+}
+
+.button--offer {
+  display: block;
+  text-align: center;
+  padding: 9px 0;
+
+  @media (min-width: $desktop-width) {
+    width: 43%;
+    margin-left: 177px;
+  }
 }
 
 .button--video-order {
-  padding: 5px 12px;
-  margin-bottom: 40px;
+  display: block;
+  padding: 9px 12px;
+  margin-bottom: 50px;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
-    width: 80%;
-    text-align: center;
+    width: 100%;
   }
 
   @media (min-width: $desktop-width) {
@@ -26,12 +56,38 @@
 }
 
 .button--order-form {
-  padding: 10px 0;
-  margin-left: 10px;
-  width: 90%;
+  padding: 13px 0;
+  width: 100%;
   background-color: white;
+  margin-top: 13px;
+  margin-bottom: 15px;
 
   @media (min-width: $tablet-width) {
     width: 35%;
+    margin-top: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 22%;
+    margin-left: 176px;
+  }
+}
+
+.button--contacts {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  width: 68%;
+  padding: 7px 0;
+
+  @media (min-width: $tablet-width) {
+    width: 30%;
+    padding: 9px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 79px;
+    width: 231px;
+    margin-left: 31.6%;
   }
 }

@@ -1,5 +1,6 @@
 .user-contacts {
   padding: 0;
+  margin: 0;
 }
 
 .user-contacts__input {
@@ -11,28 +12,74 @@
   border-color: #000000;
   font-size: 17px;
   line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 65px;
+    font-size: 19px;
+    padding-left: 17px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 697px;
+  }
 }
 
 .user-contacts__label--phone {
+  font-size: 17px;
+  font-weight: bold;
+  color: #63d1bb;
+  text-transform: uppercase;
+  position: absolute;
+  left: -2px;
+  top: -19px;
+
   @media (min-width: $tablet-width) {
     position: absolute;
     left: 0;
+    top: 34%;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 60px;
     top: 35%;
-    font-size: 17px;
-    font-weight: bold;
-    color: #63d1bb;
-    text-transform: uppercase;
   }
 }
 
 .user-contacts__label--email {
+  font-size: 17px;
+  font-weight: bold;
+  color: #63d1bb;
+  text-transform: uppercase;
+  position: absolute;
+  left: -2px;
+  top: 87px;
+
   @media (min-width: $tablet-width) {
     position: absolute;
     left: 0;
-    top: 65%;
-    font-size: 17px;
-    font-weight: bold;
-    color: #63d1bb;
-    text-transform: uppercase;
+    top: 72.5%;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 59px;
+    top: 74%;
+  }
+}
+
+.user-contacts__item {
+  padding-bottom: 60px;
+
+  &:last-child {
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 4px;
+  }
+}
+
+.user-contacts__input--email {
+  @media (min-width: $tablet-width) {
+    padding-top: 35px;
   }
 }

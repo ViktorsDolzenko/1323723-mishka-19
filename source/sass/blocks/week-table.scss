@@ -4,8 +4,8 @@
   border-spacing: 0;
 
   @media (min-width: $desktop-width) {
-    width: 70%;
-    padding-left: 150px;
+    width: 69%;
+    padding-left: 176px;
   }
 }
 
@@ -15,4 +15,17 @@
 
 .week-table__row {
   box-shadow: inset 0 -1px 0 0 #e5e5e5;
+}
+
+.week-table__cell-description {
+  padding-left: 17px;
+  padding-top: 7px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+  }
 }

@@ -1,10 +1,27 @@
 .form-header {
   background-color: #ebebeb;
-  padding: 75px 0;
-  margin-bottom: 30px;
+  padding: 53px 0;
+  margin-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 75px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 143px;
+  }
 }
 
 .form-header__title {
   font-size: 27px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    margin-top: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+  }
 }

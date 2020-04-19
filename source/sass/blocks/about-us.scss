@@ -7,53 +7,81 @@
   line-height: 20px;
   margin: 0;
   padding-left: 0;
-  margin-bottom: 70px;
+  margin-bottom: 53px;
 
   @media (min-width: $tablet-width) {
     justify-content: space-between;
-    margin-bottom: 175px;
+    margin-bottom: 170px;
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 176px;
+    padding-right: 172px;
+    margin-bottom: 178px;
   }
 }
 
 .about-us__list-item {
   position: relative;
-  padding-top: 80px;
+  padding-top: 84px;
 
   @media (min-width: $tablet-width) {
-    width: 45%;
-
-    &:first-child {
-      width: 30%;
-    }
-
-    &:last-child {
-      padding-right: 80px;
-    }
+    padding-top: 108px;
+    width: 50%;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 150px;
+    width: 351px;
+    padding-top: 109px;
   }
 }
 
 .about-us__title {
   margin: 0;
-  margin-top: 50px;
+  margin-top: 70px;
+  font-size: 25px;
 
   @media (min-width: $tablet-width) {
     font-size: 43px;
+    line-height: 50px;
+    margin-top: 118px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 150px;
+    padding-left: 171px;
     font-size: 53px;
+    margin-top: 158px;
   }
 }
 
-/* .about-us__eko::before {
-  content: "";
-  background-image: url("../img/icon-feature-flower.svg");
-  width: 33px;
-  height: 58px;
-  position: absolute;
-} */
+.about-us__money {
+  @media (min-width: $tablet-width) {
+    order: 2;
+  }
+}
+
+.about-us__like {
+  @media (min-width: $tablet-width) {
+    order: 4;
+  }
+}
+
+.about-us__handmade {
+  @media (min-width: $tablet-width) {
+    order: 1;
+  }
+}
+
+.about-us__gift {
+  @media (min-width: $tablet-width) {
+    order: 5;
+  }
+}
+
+.about-us__support {
+  @media (min-width: $tablet-width) {
+    order: 3;
+  }
+}

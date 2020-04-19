@@ -8,7 +8,7 @@
 }
 
 .information-list__item {
-  padding-bottom: 10px;
+  padding-bottom: 19px;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -25,15 +25,39 @@
   font-size: 17px;
   font-weight: bold;
   padding-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 19px;
+    padding-top: 9px;
+  }
 }
 
 .information-list__input {
-  padding: 12px 0;
+  padding-bottom: 0;
   width: 100%;
-  min-height: 52px;
+  min-height: 43px;
   border-width: 0 0 2px;
   border-style: solid;
   border-color: #000000;
   font-size: 17px;
   line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 0;
+    min-height: 61px;
+    font-size: 19px;
+    padding-left: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 68%;
+    padding-left: 18px;
+    padding-top: 7px;
+  }
+}
+
+.information-list__input--name {
+  @media (min-width: $desktop-width) {
+    width: 628px;
+  }
 }

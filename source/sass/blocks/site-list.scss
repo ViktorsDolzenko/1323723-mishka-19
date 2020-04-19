@@ -1,7 +1,9 @@
 .site-list {
   list-style: none;
   padding: 0;
-  margin-bottom: 0;
+  padding-top: 17px;
+  margin: 0;
+  z-index: 5;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -16,11 +18,19 @@
   color: black;
   font-size: 17px;
   font-weight: bold;
-  padding: 27px 0 27px 50px;
+  padding: 26px 30px 24px 45px;
 
   @media (min-width: $tablet-width) {
     font-size: 15px;
     padding: 15px 15px 20px 15px;
+  }
+
+  &:hover[href] {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
   }
 }
 
@@ -33,6 +43,8 @@
 }
 
 .site-list--user-nav {
+  padding: 0;
+
   @media (min-width: $tablet-width) {
     height: 100%;
     justify-content: flex-end;
@@ -63,12 +75,27 @@
   @media (min-width: $desktop-width) {
     display: flex;
     width: 50%;
+    padding-top: 5px;
   }
 }
 
 .site-link--nav {
+  padding-left: 45px;
+  padding-top: 25px;
+  padding-bottom: 24px;
+
   @media (min-width: $tablet-width) {
     padding-right: 0;
+    font-size: 17px;
+    padding-top: 9px;
+  }
+}
+
+.site-link--main {
+  @media (min-width: $desktop-width) {
+    font-size: 17px;
+    line-height: 24px;
+    padding-top: 3px;
   }
 }
 
@@ -76,5 +103,25 @@
 .site-link--offer {
   @media (min-width: $tablet-width) {
     padding-left: 0;
+  }
+}
+
+.site-link__form {
+  @media (min-width: $tablet-width) {
+    padding-left: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 56px;
+  }
+}
+
+.site-link__sale {
+  padding-left: 47px;
+}
+
+.site-link--form {
+  @media (min-width: $tablet-width) {
+    padding-left: 22px;
   }
 }
