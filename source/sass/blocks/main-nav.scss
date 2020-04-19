@@ -85,6 +85,7 @@
 
 .main-nav__text {
   display: none;
+  z-index: 5;
 
   @media (min-width: $tablet-width) {
     display: block;

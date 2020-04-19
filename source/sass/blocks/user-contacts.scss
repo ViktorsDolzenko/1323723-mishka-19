@@ -6,7 +6,7 @@
 .user-contacts__input {
   padding: 12px 0;
   width: 100%;
-  min-height: 70px;
+  min-height: 52px;
   border-width: 0 0 2px;
   border-style: solid;
   border-color: #000000;
@@ -30,8 +30,8 @@
   color: #63d1bb;
   text-transform: uppercase;
   position: absolute;
-  left: 0;
-  top: -14px;
+  left: -2px;
+  top: -19px;
 
   @media (min-width: $tablet-width) {
     position: absolute;
@@ -51,8 +51,8 @@
   color: #63d1bb;
   text-transform: uppercase;
   position: absolute;
-  left: 0;
-  top: 93px;
+  left: -2px;
+  top: 87px;
 
   @media (min-width: $tablet-width) {
     position: absolute;
@@ -67,7 +67,7 @@
 }
 
 .user-contacts__item {
-  padding-bottom: 37px;
+  padding-bottom: 60px;
 
   &:last-child {
     padding-bottom: 0;
@@ -75,5 +75,11 @@
 
   @media (min-width: $tablet-width) {
     padding-bottom: 4px;
+  }
+}
+
+.user-contacts__input--email {
+  @media (min-width: $tablet-width) {
+    padding-top: 35px;
   }
 }

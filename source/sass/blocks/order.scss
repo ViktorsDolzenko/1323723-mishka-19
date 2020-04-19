@@ -85,7 +85,7 @@
 }
 
 .order__legend--optional {
-  padding-top: 9px;
+  padding-top: 17px;
   padding-bottom: 12px;
 
   @media (min-width: $tablet-width) {
@@ -109,6 +109,12 @@
 
 .order__fieldset--information {
   @media (min-width: $tablet-width) {
-    padding-top: 18px;
+    padding-top: 7px;
+  }
+}
+
+.order__fieldset--contacts {
+  @media (min-width: $tablet-width) {
+    padding-top: 36px;
   }
 }
