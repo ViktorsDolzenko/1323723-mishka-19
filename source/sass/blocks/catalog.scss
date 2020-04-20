@@ -14,9 +14,9 @@
 }
 
 .catalog__item {
-  display: flex;
-  flex-wrap: wrap;
   width: 260px;
+  display: block;
+  margin-bottom: 33px;
 
   @media (min-width: $tablet-width) {
     width: 100%;
@@ -24,7 +24,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 25%;
+    width: 30%;
     justify-content: center;
   }
 }
