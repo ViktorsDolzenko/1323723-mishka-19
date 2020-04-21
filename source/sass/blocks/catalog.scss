@@ -15,16 +15,21 @@
 
 .catalog__item {
   width: 260px;
-  display: block;
-  margin-bottom: 33px;
+  display: flex;
+  margin-bottom: 23px;
+  flex-direction: column;
 
   @media (min-width: $tablet-width) {
     width: 100%;
     justify-content: center;
+    margin-bottom: 53px;
+    flex-direction: row;
   }
 
   @media (min-width: $desktop-width) {
     width: 30%;
     justify-content: center;
+    margin-bottom: 62px;
+    flex-direction: column;
   }
 }

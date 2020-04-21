@@ -4,6 +4,7 @@
   margin-bottom: 26px;
 
   @media (min-width: $tablet-width) {
+    position: relative;
     padding-top: 58px;
   }
 
@@ -27,7 +28,12 @@
 }
 
 .page-main--catalog {
+  margin-top: 0;
   margin-bottom: 30px;
+
+  @media (min-width: $desktop-width) {
+    margin-top: 28px;
+  }
 }
 
 .page-main__form-text {
@@ -44,5 +50,32 @@
   @media (min-width: $desktop-width) {
     padding-left: 175px;
     width: 83%;
+  }
+}
+
+.page-main__header::after {
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+    background-image: url("../img/bg-zigzag-fill.svg");
+    top: 90.7%;
+    height: 24px;
+    background-size: 768px 24px;
+    background-position-x: 0;
+    left: 0;
+    right: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    content: "";
+    position: absolute;
+    background-image: url("../img/bg-zigzag-fill.svg");
+    top: 94.5%;
+    height: 24px;
+    background-size: auto 34px;
+    background-position-x: 61px;
+    left: 0;
+    right: 0;
+    background-repeat: repeat-x;
   }
 }

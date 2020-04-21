@@ -33,6 +33,7 @@
     border-radius: 50%;
     left: -63px;
     top: -5px;
+    transition: border-color 0.5s ease-out;
 
     @media (min-width: $tablet-width) {
       width: 50px;
@@ -68,8 +69,10 @@
 
 .radio-list__label:hover::before {
   border-color: #62d1ba;
+  transition: border-color 0.5s ease;
 }
 
 .radio-list__label:active::before {
   border-color: rgba($color: #444444, $alpha: 0.3);
+  transition: color 0.5s ease;
 }

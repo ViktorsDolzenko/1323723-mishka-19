@@ -41,6 +41,8 @@
   border-color: #000000;
   font-size: 17px;
   line-height: 18px;
+  outline: 0;
+  transition: border-color 0.5s ease-out;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 0;
@@ -60,4 +62,15 @@
   @media (min-width: $desktop-width) {
     width: 628px;
   }
+}
+
+.information-list__input:hover,
+.information-list__input:focus {
+  border-color: #62d1ba;
+  transition: border-color 0.5s ease;
+}
+
+.information-list__input:focus::placeholder {
+  color: #444444;
+  transition: color 0.5s ease;
 }

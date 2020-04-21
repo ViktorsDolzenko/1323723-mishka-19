@@ -5,10 +5,12 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 75px;
+    position: relative;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 143px;
+    margin-bottom: 125px;
+    min-height: 250px;
   }
 }
 
@@ -23,5 +25,33 @@
 
   @media (min-width: $desktop-width) {
     font-size: 53px;
+  }
+}
+
+.form-header::after {
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+    background-image: url("../img/bg-zigzag-fill.svg");
+    top: 95.5%;
+    height: 24px;
+    background-size: auto 23px;
+    background-position-x: -3px;
+    left: 0;
+    right: 0;
+    background-repeat: repeat-x;
+  }
+
+  @media (min-width: $desktop-width) {
+    content: "";
+    position: absolute;
+    background-image: url("../img/bg-zigzag-fill.svg");
+    top: 94.5%;
+    height: 24px;
+    background-size: auto 34px;
+    background-position-x: 89px;
+    left: 0;
+    right: 0;
+    background-repeat: repeat-x;
   }
 }

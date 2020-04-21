@@ -113,7 +113,7 @@
 
   @media (min-width: $tablet-width) {
     width: 50%;
-    min-height: 117px;
+    min-height: 121px;
   }
 
   @media (min-width: $desktop-width) {
@@ -126,11 +126,10 @@
     content: "";
     position: absolute;
     background-image: url("../img/bg-zigzag-fill.svg");
-    top: 98.7%;
+    top: 98%;
     height: 24px;
     background-size: 768px 24px;
-    background-position-x: 0;
-    left: 0;
+    left: 29px;
     right: 0;
   }
 

@@ -51,6 +51,8 @@
   border-color: #000000;
   font-size: 17px;
   line-height: 18px;
+  outline: 0;
+  transition: border-color 0.5s ease-out;
 
   @media (min-width: $tablet-width) {
     width: 500px;
@@ -117,4 +119,16 @@
   @media (min-width: $tablet-width) {
     padding-top: 36px;
   }
+}
+
+
+.order__text-input:hover,
+.user-contacts__input:focus {
+  border-color: #62d1ba;
+  transition: border-color 0.5s ease;
+}
+
+.order__text-input:focus::placeholder {
+  color: #444444;
+  transition: color 0.5s ease;
 }

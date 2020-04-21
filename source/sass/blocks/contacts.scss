@@ -1,6 +1,9 @@
 .contacts {
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     position: relative;
+  }
+
+  @media (min-width: $desktop-width) {
     padding-bottom: 110px;
   }
 }
@@ -40,11 +43,33 @@
   text-decoration: none;
   color: #444444;
   padding-left: 30px;
+  transition: color 0.5s ease-out;
 
   @media (min-width: $tablet-width) {
     font-size: 17px;
     padding-left: 22px;
   }
+}
+
+.contacts__link:hover {
+  color: #46c1ae;
+  transition: color 0.5s ease;
+}
+
+.contacts__link:active {
+  color: rgba(70, 193, 174, 0.3);
+  transition: color 0.5s ease;
+}
+
+.contacts__link::after {
+  content: "";
+  height: 1px;
+  background: #46c1ae;
+  display: block;
+}
+
+.contacts__link:hover::after {
+  background: rgba($color: #46c1ae, $alpha: 0.3);
 }
 
 .contacts__title {
@@ -55,14 +80,15 @@
   @media (min-width: $tablet-width) {
     font-size: 43px;
     line-height: 50px;
-    margin-top: 177px;
-    margin-bottom: 21px;
+    margin-top: 124px;
+    margin-bottom: 22px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 53px;
     padding-left: 171px;
-    margin-top: 314px;
+    margin-top: 222px;
+    margin-bottom: 25px;
   }
 }
 
@@ -80,5 +106,31 @@
 
   @media (min-width: $desktop-width) {
     width: 25%;
+  }
+}
+
+.contacts::before {
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+    background-image: url("../img/bg-zigzag-line.svg");
+    top: -10%;
+    height: 24px;
+    background-size: 768px 25px;
+    left: -19px;
+    right: 0;
+  }
+
+
+  @media (min-width: $desktop-width) {
+    content: "";
+    position: absolute;
+    background-image: url("../img/bg-zigzag-line.svg");
+    top: -33%;
+    height: 24px;
+    background-size: 1052px 25px;
+    left: 23.8%;
+    right: 0;
+    width: 1027px;
   }
 }
