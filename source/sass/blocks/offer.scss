@@ -1,3 +1,4 @@
+
 .offer__header {
   @media (min-width: $tablet-width) {
     display: flex;
@@ -111,14 +112,15 @@
     position: absolute;
     top: 10%;
     left: 50%;
+    width: 333px;
+    height: 404px;
   }
 
   @media (min-width: $desktop-width) {
+    position: absolute;
     z-index: -1;
+    width: 525px;
+    height: 636px;
+    top: -24%;
   }
-}
-
-@media (min-width: $desktop-width) {
-  width: 290px;
-  margin-left: 150px;
 }

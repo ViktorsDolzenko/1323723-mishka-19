@@ -14,17 +14,22 @@
 }
 
 .catalog__item {
-  display: flex;
-  flex-wrap: wrap;
   width: 260px;
+  display: flex;
+  margin-bottom: 23px;
+  flex-direction: column;
 
   @media (min-width: $tablet-width) {
     width: 100%;
     justify-content: center;
+    margin-bottom: 53px;
+    flex-direction: row;
   }
 
   @media (min-width: $desktop-width) {
-    width: 25%;
+    width: 30%;
     justify-content: center;
+    margin-bottom: 62px;
+    flex-direction: column;
   }
 }

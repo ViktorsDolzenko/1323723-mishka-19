@@ -9,9 +9,9 @@
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    top: 50%;
+    top: 40%;
     transform: translateY(-70%);
-    left: 57%;
+    left: 50%;
   }
 }
 
@@ -19,4 +19,14 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    height: 457px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 525px;
+    height: 457px;
+  }
 }

@@ -1,11 +1,24 @@
 .button {
   color: #444444;
-  border: 2px solid black;
+  border: 2px solid #444444;
   padding: 5px 0;
   font-size: 17px;
   font-weight: bold;
   text-transform: uppercase;
   cursor: pointer;
+  outline: 0;
+  transition: all 0.5s ease-out;
+}
+
+.button:hover {
+  background-color: #444444;
+  color: white;
+  transition: all 0.5s ease;
+}
+
+.button:active {
+  background-color: #444444;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .button--reviews {
@@ -17,13 +30,13 @@
     padding: 8px 38px;
     text-align: center;
     position: absolute;
-    top: -2%;
+    top: 16.6%;
     right: 6.5%;
     display: block;
   }
 
-  @media (min-width: $tablet-width) {
-    top: -2.5%;
+  @media (min-width: $desktop-width) {
+    top: 16.5%;
     right: 4.3%;
     padding: 9px 38px;
   }
@@ -51,7 +64,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 30px;
+    margin-left: 0;
   }
 }
 

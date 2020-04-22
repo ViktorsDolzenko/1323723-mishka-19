@@ -47,15 +47,17 @@
   <main class="page-main">
     <h1 class="visually-hidden">Мишка — интернет-магазин игрушек ручной работы</h1>
     <section class="promo">
-      <h2 class="promo__title">Милые штуки ручной работы для дома</h2>
-      <ul class="promo__list">
-        <li class="promo__list-item">
-          <a class="promo__list-link" href="#">Предметы интерьера</a>
-        </li>
-        <li class="promo__list-item">
-          <a class="promo__list-link" href="#">Детские игрушки</a>
-        </li>
-      </ul>
+      <div class="promo__wrapper">
+        <h2 class="promo__title">Милые штуки ручной работы для дома</h2>
+        <ul class="promo__list">
+          <li class="promo__list-item">
+            <a class="promo__list-link" href="#">Предметы интерьера</a>
+          </li>
+          <li class="promo__list-item">
+            <a class="promo__list-link" href="#">Детские игрушки</a>
+          </li>
+        </ul>
+      </div>
     </section>
     <section class="offer container">
       <header class="offer__header">
@@ -80,7 +82,12 @@
             </tr>
           </tbody>
         </table>
-        <img class="offer__img offer__img" src="img/triple-set-mobile@1x.jpg" alt="Пряжа" width="260" height="315">
+        <picture>
+          <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+          <img class="offer__img" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg x2" alt="Пряжа" width="260"
+            height="315">
+        </picture>
         <p class="offer__price">Цена: 990 руб.</p>
         <a class="button button--offer" href="#">Заказать</a>
       </div>
@@ -124,7 +131,11 @@
         </div>
       </div>
       <div class="contacts__map map">
-        <img class="map__img" src="img/map-mobile@1x.jpg" alt="Карта" width="322" height="457">
+        <picture>
+          <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
+          <img class="map__img" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Карта" width="322" height="457">
+        </picture>
       </div>
       <a class="button button--contacts" href="#">Напишите нам</a>
     </section>

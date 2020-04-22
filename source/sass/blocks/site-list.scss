@@ -19,6 +19,7 @@
   font-size: 17px;
   font-weight: bold;
   padding: 26px 30px 24px 45px;
+  transition: color 0.5s ease-out;
 
   @media (min-width: $tablet-width) {
     font-size: 15px;
@@ -27,9 +28,10 @@
 
   &:hover[href] {
     color: rgba(0, 0, 0, 0.6);
+    transition: color 0.5s ease;
   }
 
-  &:active {
+  &:active[href] {
     color: rgba(0, 0, 0, 0.3);
   }
 }
