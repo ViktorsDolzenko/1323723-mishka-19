@@ -66,6 +66,7 @@
   flex-wrap: wrap;
   width: 100%;
   padding: 0;
+  margin-bottom: 0;
 
   @media (min-width: $tablet-width) {
     max-width: 670px;
@@ -99,16 +100,26 @@
 }
 
 .promo__list-item {
+  position: relative;
   list-style: none;
   min-height: 103px;
   width: 100%;
+  transition: all 0.3s ease;
 
-  &:first-child {
-    background-color: #63d1bb;
+  &:hover {
+    margin-top: -5px;
+    transition: all 0.3s ease-out;
   }
 
-  &:last-child {
-    background-color: #56c3b2;
+  &:hover .promo__icon {
+    opacity: 1;
+    transition: all 0.3s ease;
+  }
+
+  &:active .promo__icon,
+  &:active .promo__list-link{
+    opacity: 0.3;
+    transition: all 0.3s ease;
   }
 
   @media (min-width: $tablet-width) {
@@ -120,6 +131,23 @@
     min-height: 122px;
   }
 }
+
+.promo__list-item--interior {
+    background-color: #63d1bb;
+
+  &:hover {
+    background-color: #59d5bc;
+  }
+}
+
+.promo__list-item--toy {
+  background-color: #56c3b2;
+
+  &:hover {
+    background-color: #46c1ae;
+  }
+}
+
 
 .promo::after {
   @media (min-width: $tablet-width) {
@@ -146,3 +174,41 @@
     background-repeat: repeat-x;
   }
 }
+
+.promo__icon {
+  position: absolute;
+  fill: #149080;
+  opacity: 0.5;
+  transition: all 0.3s ease;
+}
+
+.promo__icon--interior {
+  top: 23px;
+  left: 72.5%;
+
+  @media (min-width: $tablet-width) {
+    top: 31px;
+    left: 77.5%;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 31px;
+    left: 85.5%;
+  }
+}
+
+.promo__icon--toy {
+  top: 20px;
+  left: 69.5%;
+
+  @media (min-width: $tablet-width) {
+    top: 31px;
+    left: 71.5%;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 33px;
+    left: 82%;
+  }
+}
+

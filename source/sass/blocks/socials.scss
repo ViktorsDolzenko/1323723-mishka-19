@@ -34,19 +34,28 @@
 }
 
 .socials__link--instagram {
-  background-image: url("../img/icon-insta.svg");
   width: 22px;
   height: 21px;
 }
 
 .socials__link--facebook {
-  background-image: url("../img/icon-fb.svg");
   width: 15px;
   height: 29px;
 }
 
 .socials__link--twitter {
-  background-image: url("../img/icon-twitter.svg");
   width: 24px;
   height: 20px;
+}
+
+.socials-svg {
+
+  &:hover {
+    fill: #46c1ae;
+  }
+
+  &:active {
+    fill: #46c1ae;
+    opacity: 0.3;
+  }
 }

@@ -108,7 +108,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 316px;
+    width: 315px;
     height: 462px;
   }
 }
@@ -125,4 +125,29 @@
     margin-top: 3px;
     min-height: 183px;
   }
+
+  @media (min-width: $desktop-width) {
+    min-height: 51px;
+  }
+
 }
+
+.catalog-item__cart {
+  opacity: 0.2;
+
+  &:hover {
+    opacity: 1;
+    fill: #63d1bb;
+  }
+
+  &:active {
+    fill: #63d1bb;
+    opacity: 0.3;
+  }
+}
+
+.catalog-item__button {
+  padding-top: 10px;
+  padding-right: 5px;
+}
+

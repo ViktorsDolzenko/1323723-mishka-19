@@ -22,6 +22,11 @@
   @media (min-width: $tablet-width) {
     padding-left: 10px;
   }
+
+  &:active {
+    opacity: 0.3;
+  }
+
 }
 
 .created-by__img {
@@ -29,12 +34,21 @@
   position: absolute;
   right: 26%;
 
+  &:hover {
+    fill: #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+
   @media (min-width: $tablet-width) {
     right: 7%;
   }
 
   @media (min-width: $desktop-width) {
-    right: 11.5%;
+    right: 22.5%;
   }
 }
 
@@ -43,5 +57,9 @@
 
   @media (min-width: $tablet-width) {
     display: block;
+  }
+
+  &:hover {
+    fill: #46c1ae;
   }
 }

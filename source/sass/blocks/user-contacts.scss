@@ -96,3 +96,52 @@
   color: #444444;
   transition: color 0.5s ease;
 }
+
+.user-contacts__icon {
+  position: absolute;
+  opacity: 0.2;
+  transition: fill 0.5s ease-out;
+}
+
+
+
+.user-contacts__icon--phone {
+  top: 12%;
+  left: 84%;
+
+  @media (min-width: $tablet-width) {
+    top: 30%;
+    left: 92.5%;
+
+   }
+
+   @media (min-width: $desktop-width) {
+    top: 32%;
+    left: 80.5%;
+  }
+  }
+
+
+.user-contacts__icon--mail {
+top: 72%;
+left: 83%;
+opacity: 0.2;
+
+@media (min-width: $tablet-width) {
+  top: 70%;
+  left: 92%;
+
+ }
+
+ @media (min-width: $desktop-width) {
+  top: 72%;
+  left: 80%;
+}
+}
+
+.user-contacts__item:hover .user-contacts__icon,
+.user-contacts__item:focus .user-contacts__icon {
+fill: #62d1ba;
+opacity: 1;
+transition: fill 0.5s ease;
+}

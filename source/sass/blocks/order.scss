@@ -7,6 +7,7 @@
     padding-left: 166px;
     padding-top: 50px;
     font-size: 19px;
+    padding-right: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -112,6 +113,7 @@
 .order__fieldset--information {
   @media (min-width: $tablet-width) {
     padding-top: 7px;
+    padding-right: 0;
   }
 }
 
@@ -120,7 +122,6 @@
     padding-top: 36px;
   }
 }
-
 
 .order__text-input:hover,
 .user-contacts__input:focus {

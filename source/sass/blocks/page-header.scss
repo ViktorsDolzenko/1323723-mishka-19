@@ -4,7 +4,6 @@
   margin-top: 25px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 20px;
     margin: 0;
     display: flex;
     height: 90px;
@@ -18,8 +17,10 @@
 
   @media (min-width: $desktop-width) {
     position: absolute;
+    top: 9px;
     left: 50%;
     transform: translateX(-50%);
+
   }
 }
 
@@ -27,4 +28,24 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    display:inline-block;
+    width: 112px;
+    height: 46px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display:inline-block;
+    width: 149px;
+    height: 72px;
+  }
 }
