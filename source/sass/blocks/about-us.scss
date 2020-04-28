@@ -118,8 +118,8 @@
 
 
 .about-us__icon {
-    position: absolute;
-    fill: #63d1bb;
+  position: absolute;
+  fill: #63d1bb;
 }
 
 .about-us__eko--icon {
@@ -129,7 +129,7 @@
   @media (min-width: $tablet-width) {
     top: 48px;
     left: 9px;
-    }
+  }
 }
 
 .about-us__money--icon {
@@ -139,7 +139,7 @@
   @media (min-width: $tablet-width) {
     top: 52px;
     left: 1px;
-    }
+  }
 }
 
 .about-us__like--icon {
@@ -149,16 +149,16 @@
   @media (min-width: $tablet-width) {
     top: 60px;
     left: 8px;
-    }
+  }
 }
 
 .about-us__handmade--icon {
-top: 29px;
-left: 4px;
+  top: 29px;
+  left: 4px;
 
-@media (min-width: $tablet-width) {
-  top: 51px;
-  left: 3px;
+  @media (min-width: $tablet-width) {
+    top: 51px;
+    left: 3px;
   }
 }
 
@@ -169,7 +169,7 @@ left: 4px;
   @media (min-width: $tablet-width) {
     top: 55px;
     left: -6px;
-    }
+  }
 }
 
 .about-us__gift--icon {
@@ -179,5 +179,5 @@ left: 4px;
   @media (min-width: $tablet-width) {
     top: 56px;
     left: 3px;
-    }
+  }
 }

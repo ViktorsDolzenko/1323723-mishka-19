@@ -20,7 +20,6 @@
     top: 9px;
     left: 50%;
     transform: translateX(-50%);
-
   }
 }
 
@@ -38,13 +37,13 @@
   }
 
   @media (min-width: $tablet-width) {
-    display:inline-block;
+    display: inline-block;
     width: 112px;
     height: 46px;
   }
 
   @media (min-width: $desktop-width) {
-    display:inline-block;
+    display: inline-block;
     width: 149px;
     height: 72px;
   }

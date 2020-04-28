@@ -116,12 +116,11 @@
   @media (min-width: $tablet-width) {
     padding-right: 36px;
   }
-
 }
 
 .site-link__form {
   @media (min-width: $tablet-width) {
-    padding-left: 0px;
+    padding-left: 0;
   }
 
   @media (min-width: $desktop-width) {

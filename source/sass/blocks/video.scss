@@ -19,7 +19,6 @@
   &:active {
     box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
   }
-
 }
 
 .video__title {
@@ -123,31 +122,31 @@
 }
 
 .video__icon {
-    position: absolute;
-    fill: #63d1bb;
-    left: 33px;
-    top: 34px;
+  position: absolute;
+  fill: #63d1bb;
+  left: 33px;
+  top: 34px;
 
-@media (min-width: $tablet-width) {
-  left: 41px;
-  top: 64.6%;
-}
+  @media (min-width: $tablet-width) {
+    left: 41px;
+    top: 64.6%;
+  }
 
-@media (min-width: $desktop-width) {
-  top: 41px;
- }
+  @media (min-width: $desktop-width) {
+    top: 41px;
+  }
 }
 
 .video__play--icon {
   transition: all 0.3s ease;
 
-    &:hover {
+  &:hover {
     transform: scale(1.2);
     transition: all 0.3s ease;
-    }
+  }
 
-    &:active {
+  &:active {
     transform: scale(0.8);
     transition: all 0.3s ease;
-      }
+  }
 }

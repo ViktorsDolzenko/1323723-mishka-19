@@ -138,15 +138,16 @@
 
 .contacts__icon {
   display: none;
+
   @media (min-width: $tablet-width) {
-    display:block;
+    display: block;
     position: absolute;
     top: -16px;
     left: 87%;
   }
 
   @media (min-width: $desktop-width) {
-    display:block;
+    display: block;
     position: absolute;
     top: -8px;
     left: 25.7%;
