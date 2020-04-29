@@ -104,3 +104,19 @@
     margin-left: 31.6%;
   }
 }
+
+.button--modal {
+  display: block;
+  margin-top: 30px;
+  width: 260px;
+  padding: 15px 0;
+  background-color: #63d1bb;
+  border: none;
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+
+  @media (min-width: $tablet-width) {
+    width: 350px;
+  }
+}

@@ -115,3 +115,69 @@
     width: 1027px;
   }
 }
+
+
+.about-us__icon {
+  position: absolute;
+  fill: #63d1bb;
+}
+
+.about-us__eko--icon {
+  top: 29px;
+  left: 8px;
+
+  @media (min-width: $tablet-width) {
+    top: 48px;
+    left: 9px;
+  }
+}
+
+.about-us__money--icon {
+  top: 29px;
+  left: 0;
+
+  @media (min-width: $tablet-width) {
+    top: 52px;
+    left: 1px;
+  }
+}
+
+.about-us__like--icon {
+  top: 33px;
+  left: 7px;
+
+  @media (min-width: $tablet-width) {
+    top: 60px;
+    left: 8px;
+  }
+}
+
+.about-us__handmade--icon {
+  top: 29px;
+  left: 4px;
+
+  @media (min-width: $tablet-width) {
+    top: 51px;
+    left: 3px;
+  }
+}
+
+.about-us__support--icon {
+  top: 29px;
+  left: -6px;
+
+  @media (min-width: $tablet-width) {
+    top: 55px;
+    left: -6px;
+  }
+}
+
+.about-us__gift--icon {
+  top: 26px;
+  left: 3px;
+
+  @media (min-width: $tablet-width) {
+    top: 56px;
+    left: 3px;
+  }
+}

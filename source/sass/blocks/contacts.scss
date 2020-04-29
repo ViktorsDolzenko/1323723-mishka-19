@@ -73,6 +73,7 @@
 }
 
 .contacts__title {
+  position: relative;
   margin-top: 87px;
   margin-bottom: 0;
   font-size: 18px;
@@ -132,5 +133,23 @@
     left: 23.8%;
     right: 0;
     width: 1027px;
+  }
+}
+
+.contacts__icon {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    position: absolute;
+    top: -16px;
+    left: 87%;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    position: absolute;
+    top: -8px;
+    left: 25.7%;
   }
 }
