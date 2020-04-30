@@ -27,11 +27,28 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    min-height: 140px;
-    padding-top: 27px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+
+    @media (min-width: $desktop-width) {
+      padding-bottom: 54px;
+      padding-top: 55px;
+    }
+  }
+}
+
+.page-footer__link .page-footer__logo {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
   }
 
-  @media (min-width: $desktop-width) {
-    padding: 5px 20px;
+  &:hover {
+    fill: #46c1ae;
   }
+}
+
+.page-footer__link:focus .page-footer__logo {
+  fill: #46c1ae;
 }

@@ -1,5 +1,6 @@
 .socials {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   list-style: none;
@@ -29,7 +30,8 @@
   width: 40px;
   height: 40px;
   content: "";
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
   background-repeat: no-repeat;
 }
 

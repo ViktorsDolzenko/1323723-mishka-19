@@ -22,6 +22,7 @@
 }
 
 .video__title {
+  position: relative;
   padding-left: 25px;
   width: 130px;
   font-size: 17px;
@@ -98,7 +99,7 @@
 }
 
 
-.video-button {
+.video__player-button {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -129,15 +130,15 @@
 
   @media (min-width: $tablet-width) {
     left: 41px;
-    top: 64.6%;
+    top: 1px;
   }
 
   @media (min-width: $desktop-width) {
-    top: 41px;
+    top: -16px;
   }
 }
 
-.video__play--icon {
+.video__player-icon {
   transition: all 0.3s ease;
 
   &:hover {

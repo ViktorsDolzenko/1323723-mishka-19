@@ -1,0 +1,57 @@
+.page-catalog {
+  background-color: #ebebeb;
+  padding: 57px 0;
+  margin-bottom: 26px;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    padding-top: 58px;
+    margin-bottom: 66px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 53px;
+    margin-bottom: 0;
+  }
+}
+
+.page-catalog__title {
+  font-size: 27px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+  }
+}
+
+.page-catalog::after {
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+    background-image: url("../img/bg-zigzag-fill.svg");
+    top: 90.7%;
+    height: 24px;
+    background-size: 768px 24px;
+    background-position-x: 0;
+    left: 0;
+    right: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    content: "";
+    position: absolute;
+    background-image: url("../img/bg-zigzag-fill.svg");
+    top: 94.5%;
+    height: 24px;
+    background-size: auto 34px;
+    background-position-x: 61px;
+    left: -29px;
+    right: 0;
+    background-repeat: repeat-x;
+  }
+}
