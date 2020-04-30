@@ -50,15 +50,3 @@
     right: 22.5%;
   }
 }
-
-.created-by__logo {
-  display: none;
-
-  @media (min-width: $tablet-width) {
-    display: block;
-  }
-
-  &:hover {
-    fill: #46c1ae;
-  }
-}

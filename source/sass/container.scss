@@ -17,25 +17,3 @@
     padding-right: 50px;
   }
 }
-
-
-.container--nav {
-  padding: 0;
-  margin: 0;
-
-  @media (min-width: $tablet-width) {
-    padding-left: 50px;
-    padding-right: 50px;
-    width: 768px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 1150px;
-    padding-left: 50px;
-    padding-right: 50px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}

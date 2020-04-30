@@ -2,12 +2,12 @@
   position: relative;
   border: 0;
   padding-left: 0;
+  padding-right: 0;
 
   @media (min-width: $tablet-width) {
     padding-left: 166px;
     padding-top: 50px;
     font-size: 19px;
-    padding-right: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -132,4 +132,11 @@
 .order__text-input:focus::placeholder {
   color: #444444;
   transition: color 0.5s ease;
+}
+
+.order__text-input::placeholder {
+  font-size: 17px;
+  font-weight: normal;
+  opacity: 0.3;
+  line-height: 18px;
 }
