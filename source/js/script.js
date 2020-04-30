@@ -19,8 +19,8 @@ navToggle.addEventListener("click", function () {
 var cartButtons = document.querySelectorAll(".catalog-item__button");
 var myModal = document.querySelector(".modal");
 
-cartButtons.forEach(function (openOrder) {
-  openOrder.addEventListener("click", function (e) {
+for(var i = 0; i < cartButtons.length; i++) {
+  cartButtons[i].addEventListener("click", function (e) {
     e.preventDefault();
     myModal.classList.add("modal__open");
     if (myModal.classList.contains("modal__open")) {
@@ -31,8 +31,7 @@ cartButtons.forEach(function (openOrder) {
       })
     }
   });
-
-});
+};
 
 var indexButton = document.querySelector(".button--offer");
 indexButton.addEventListener("click", function (openOrder) {
