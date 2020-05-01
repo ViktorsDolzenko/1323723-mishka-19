@@ -17,6 +17,7 @@ var del = require("del");
 var uglify = require('gulp-uglify-es').default;
 var htmlmin = require('gulp-htmlmin');
 var concat = require('gulp-concat');
+var csso = require('gulp-csso');
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
@@ -26,6 +27,7 @@ gulp.task("css", function () {
     .pipe(postcss([
       autoprefixer()
     ]))
+    .pipe(csso())
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
     .pipe(server.stream());
