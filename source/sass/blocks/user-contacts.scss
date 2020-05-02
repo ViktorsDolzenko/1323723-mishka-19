@@ -19,6 +19,7 @@
     min-height: 65px;
     font-size: 19px;
     padding-left: 17px;
+    background-color: #f1f1f1;
   }
 
   @media (min-width: $desktop-width) {
@@ -38,12 +39,11 @@
   @media (min-width: $tablet-width) {
     position: absolute;
     left: 0;
-    top: 34%;
+    top: 26%;
   }
 
   @media (min-width: $desktop-width) {
     left: 60px;
-    top: 35%;
   }
 }
 
@@ -59,12 +59,11 @@
   @media (min-width: $tablet-width) {
     position: absolute;
     left: 0;
-    top: 72.5%;
+    top: 61%;
   }
 
   @media (min-width: $desktop-width) {
     left: 59px;
-    top: 74%;
   }
 }
 
@@ -108,12 +107,11 @@
   left: 84%;
 
   @media (min-width: $tablet-width) {
-    top: 30%;
+    top: 26%;
     left: 92.5%;
   }
 
   @media (min-width: $desktop-width) {
-    top: 32%;
     left: 80.5%;
   }
 }
@@ -125,12 +123,11 @@
   opacity: 0.2;
 
   @media (min-width: $tablet-width) {
-    top: 70%;
+    top: 60%;
     left: 92%;
   }
 
   @media (min-width: $desktop-width) {
-    top: 72%;
     left: 80%;
   }
 }

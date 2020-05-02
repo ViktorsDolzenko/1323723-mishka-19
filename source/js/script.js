@@ -65,7 +65,7 @@ ymaps.ready(function () {
       balloonContent: 'Это красивая метка'
     }, {
       iconLayout: 'default#image',
-      iconImageHref: '../img/icon-map-pin.svg',
+      iconImageHref: 'img/icon-map-pin.svg',
       iconImageSize: [67, 100],
       iconImageOffset: [-30, -90]
     });

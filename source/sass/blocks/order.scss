@@ -12,6 +12,7 @@
 
   @media (min-width: $desktop-width) {
     padding-left: 177px;
+    padding-bottom: 0;
   }
 }
 
@@ -29,7 +30,7 @@
   @media (min-width: $tablet-width) {
     position: absolute;
     left: 0;
-    top: 45px;
+    top: 64px;
   }
 
   @media (min-width: $desktop-width) {
@@ -92,7 +93,11 @@
   padding-bottom: 12px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 53px;
+    padding-top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 16px;
   }
 }
 
@@ -100,26 +105,40 @@
   padding-bottom: 0;
 
   @media (min-width: $tablet-width) {
-    padding-top: 89px;
+    padding-top: 50px;
   }
 }
 
 .order__fieldset--color {
   @media (min-width: $tablet-width) {
-    padding-top: 25px;
+    padding-top: 27px;
+    background-color: #f1f1f1;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 37px;
   }
 }
 
 .order__fieldset--information {
   @media (min-width: $tablet-width) {
-    padding-top: 7px;
+    padding-top: 20px;
     padding-right: 0;
+    margin-bottom: 9px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 28px;
+    margin-bottom: 18px;
   }
 }
 
 .order__fieldset--contacts {
   @media (min-width: $tablet-width) {
     padding-top: 36px;
+    background-color: #f1f1f1;
+    padding-bottom: 51px;
   }
 }
 
@@ -139,4 +158,20 @@
   font-weight: normal;
   opacity: 0.3;
   line-height: 18px;
+}
+
+.order__legend--info {
+  @media (min-width: $tablet-width) {
+    top: 64px;
+  }
+}
+
+.order__legend--color {
+  @media (min-width: $tablet-width) {
+    top: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 56px;
+  }
 }
