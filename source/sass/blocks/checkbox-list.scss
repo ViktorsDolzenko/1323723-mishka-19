@@ -2,12 +2,10 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    width: 583px;
-    padding-left: 58px;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
-    width: 990px;
     margin-bottom: 13px;
   }
 }
@@ -27,8 +25,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 28%;
-    padding-left: 19px;
+    width: 29%;
+    padding-left: 32px;
   }
 }
 
@@ -39,6 +37,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 19px;
+    padding-left: 80px;
   }
 
   &::before {
@@ -54,7 +53,7 @@
     @media (min-width: $tablet-width) {
       width: 50px;
       height: 50px;
-      left: -79px;
+      left: 0px;
       top: -10px;
     }
   }
@@ -74,13 +73,13 @@
     @media (min-width: $tablet-width) {
       width: 30px;
       height: 16px;
-      left: -68px;
+      left: 13px;
       top: 3px;
     }
   }
 }
 
-.checkbox-list__input:checked + .checkbox-list__label::after {
+.checkbox-list__input:checked+.checkbox-list__label::after {
   display: block;
 }
 

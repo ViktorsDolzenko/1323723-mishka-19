@@ -33,17 +33,17 @@
   color: #63d1bb;
   text-transform: uppercase;
   position: absolute;
-  left: -2px;
-  top: -19px;
+  left: 0px;
+  top: -29px;
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    left: 0;
-    top: 26%;
+    left: 2px;
+    top: 25%;
   }
 
   @media (min-width: $desktop-width) {
-    left: 60px;
+    left: 6%;
   }
 }
 
@@ -53,17 +53,17 @@
   color: #63d1bb;
   text-transform: uppercase;
   position: absolute;
-  left: -2px;
-  top: 87px;
+  left: 0px;
+  top: 78px;
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    left: 0;
-    top: 61%;
+    left: 2px;
+    top: 58%;
   }
 
   @media (min-width: $desktop-width) {
-    left: 59px;
+    left: 6%;
   }
 }
 
@@ -103,23 +103,23 @@
 }
 
 .user-contacts__icon--phone {
-  top: 12%;
-  left: 84%;
+  top: 8%;
+  left: 88%;
 
   @media (min-width: $tablet-width) {
     top: 26%;
-    left: 92.5%;
+    left: 92%;
   }
 
   @media (min-width: $desktop-width) {
-    left: 80.5%;
+    left: 80%;
   }
 }
 
 
 .user-contacts__icon--mail {
   top: 72%;
-  left: 83%;
+  left: 86%;
   opacity: 0.2;
 
   @media (min-width: $tablet-width) {

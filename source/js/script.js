@@ -1,10 +1,18 @@
 var navMain = document.querySelector(".main-nav");
 var navToggle = document.querySelector(".main-nav__toggle");
 
+var setListner = function (target, type, listner) {
+  if (!target) {
+    return;
+  }
+  target.addEventListener(type, listner);
+}
+
+
 
 navMain.classList.remove("main-nav--nojs");
 
-navToggle.addEventListener("click", function () {
+setListner(navToggle, "click", function () {
   if (navMain.classList.contains("main-nav--closed")) {
     navMain.classList.remove("main-nav--closed");
     navMain.classList.add("main-nav--opened");
@@ -19,8 +27,8 @@ navToggle.addEventListener("click", function () {
 var cartButtons = document.querySelectorAll(".catalog-item__button");
 var myModal = document.querySelector(".modal");
 
-for(var i = 0; i < cartButtons.length; i++) {
-  cartButtons[i].addEventListener("click", function (e) {
+for (var i = 0; i < cartButtons.length; i++) {
+  setListner(cartButtons[i], "click", function (e) {
     e.preventDefault();
     myModal.classList.add("modal__open");
     if (myModal.classList.contains("modal__open")) {
@@ -34,7 +42,7 @@ for(var i = 0; i < cartButtons.length; i++) {
 };
 
 var indexButton = document.querySelector(".button--offer");
-indexButton.addEventListener("click", function (openOrder) {
+setListner(indexButton, "click", function (openOrder) {
   openOrder.preventDefault();
   myModal.classList.add("modal__open");
   if (myModal.classList.contains("modal__open")) {
@@ -47,7 +55,7 @@ indexButton.addEventListener("click", function (openOrder) {
 
 })
 
-
+if(document.querySelector("#map")){
 ymaps.ready(function () {
   var myMap = new ymaps.Map('map', {
       center: [59.938635, 30.323118],
@@ -57,9 +65,6 @@ ymaps.ready(function () {
       suppressMapOpenBlock: true
 
     }),
-    MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
-      '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
-    ),
     myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
       hintContent: 'Собственный значок метки',
       balloonContent: 'Это красивая метка'
@@ -72,3 +77,4 @@ ymaps.ready(function () {
   myMap.geoObjects
     .add(myPlacemark)
 });
+}
