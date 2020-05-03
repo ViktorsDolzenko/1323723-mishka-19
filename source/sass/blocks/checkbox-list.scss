@@ -53,7 +53,7 @@
     @media (min-width: $tablet-width) {
       width: 50px;
       height: 50px;
-      left: 0px;
+      left: 0;
       top: -10px;
     }
   }
@@ -79,7 +79,7 @@
   }
 }
 
-.checkbox-list__input:checked+.checkbox-list__label::after {
+.checkbox-list__input:checked + .checkbox-list__label::after {
   display: block;
 }
 

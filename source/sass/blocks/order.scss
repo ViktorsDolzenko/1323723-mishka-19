@@ -29,7 +29,6 @@
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    left: 0;
     top: 56px;
     left: 0;
   }
@@ -185,21 +184,19 @@
 }
 
 .order__wrapper--grey {
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     background-color: #f1f1f1;
   }
 }
 
 .order__radio-wrapper {
-  @media(max-width: $mobile-only) {
+  @media (max-width: $mobile-only) {
     margin-bottom: 32px;
   }
 }
 
 .order__checkbox-wrapper {
-  @media(max-width: $mobile-only) {
+  @media (max-width: $mobile-only) {
     margin-bottom: 23px;
   }
 }
-
-
