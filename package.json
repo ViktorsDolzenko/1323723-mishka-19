@@ -1,4 +1,5 @@
 {
+  "homepage": "https://awsicker.github.io/AwSick-Mishka/",
   "name": "mishka-19",
   "version": "17.0.0",
   "private": true,
@@ -8,6 +9,7 @@
     "autoprefixer": "9.5.x",
     "browser-sync": "2.26.x",
     "del": "^5.1.0",
+    "gh-pages": "^2.2.0",
     "gulp": "4.0.x",
     "gulp-concat": "^2.6.1",
     "gulp-csso": "^4.0.1",
@@ -28,6 +30,8 @@
     "stylelint-config-htmlacademy": "0.1.x"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
     "test": "npm run editorconfig && npm run stylelint",
