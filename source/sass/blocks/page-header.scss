@@ -69,3 +69,11 @@
     margin-right: auto;
   }
 }
+
+
+.page-header__logo .page-header__logo-image {
+  @media (max-width: $mobile-only){
+    width: 86px;
+    height: 35px;
+  }
+}
